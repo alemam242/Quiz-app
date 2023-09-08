@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#AE8BC34A"
+    android:gravity="center_vertical|center_horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/headerImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/quiz_cup"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#8A009688"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <LinearLayout
+            android:id="@+id/profileDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            >
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al Emam"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#C8464545"
+            android:paddingLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/headerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alemam@gmail.com"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#C8464545"
+            android:paddingLeft="5dp"
+            />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/headerUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alemam"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#C8464545"
+                    android:gravity="center"
+                    android:padding="5dp"
+
+                    />
+                <TextView
+                    android:id="@+id/highScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High Score: "
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="#C8464545"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
